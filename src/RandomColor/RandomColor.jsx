@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import random from 'lodash/random';
 import './RandomColor.css';
 
@@ -13,9 +14,11 @@ class RandomColor extends PureComponent {
   }
 
   render() {
+    const { header } = this.props;
     const { backgroundColor } = this.state;
     return (
       <div className="RandomColor">
+        <h2>{header}</h2>
         <div
           className="RandomColor__canvas"
           style={{ backgroundColor }}
@@ -27,5 +30,9 @@ class RandomColor extends PureComponent {
     );
   }
 }
+
+RandomColor.propTypes = {
+  header: PropTypes.string.isRequired,
+};
 
 export default RandomColor;

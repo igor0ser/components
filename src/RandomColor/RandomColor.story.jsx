@@ -11,10 +11,7 @@ stories.addDecorator(withKnobs);
 stories.add('test story', () => {
   const header = text('Text', 'It is test component story');
   return (
-    <div>
-      <h2>{header}</h2>
-      <RandomColor />
-    </div>
+    <RandomColor header={header} />
   );
 });
 

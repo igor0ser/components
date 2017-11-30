@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RandomColor should render div.canvas and header 1`] = `
+<div
+  className="RandomColor"
+>
+  <h2>
+    test
+  </h2>
+  <div
+    className="RandomColor__canvas"
+    style={
+      Object {
+        "backgroundColor": "purple",
+      }
+    }
+  />
+  <button
+    onClick={[Function]}
+  >
+    Change color
+  </button>
+</div>
+`;
